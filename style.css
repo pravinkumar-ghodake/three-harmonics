@@ -37,15 +37,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html {
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-  hyphenate-limit-chars: 7 4 3;
-}
-
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
   font-family: var(--serif);
   font-size: 1.125rem;
@@ -56,21 +48,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
-
 img, svg { display: block; max-width: 100%; }
 a { color: inherit; }
 button { font: inherit; cursor: pointer; background: none; border: none; color: inherit; }
-
-/* Never hyphenate display / short text */
-h1, h2, h3, h4, h5, h6,
-.logo, .footer-brand, .day-number,
-.eyebrow, .byline, .harmonic-label,
-.day-card-num, .day-card-body h3,
-cite, .source-chip, .next-label,
-.theme-toggle {
-  hyphens: manual;
-  -webkit-hyphens: manual;
-}
 
 .progress-bar {
   position: fixed;
@@ -213,9 +193,6 @@ cite, .source-chip, .next-label,
   padding-bottom: 3rem;
   border-bottom: 1px solid var(--rule);
   margin-bottom: 4rem;
-  text-align: justify;
-  text-align-last: left;
-  text-wrap: pretty;
 }
 .intro p + p { margin-top: 1.25rem; }
 
@@ -281,9 +258,6 @@ cite, .source-chip, .next-label,
   letter-spacing: -0.01em;
   color: var(--ink);
   font-style: italic;
-  text-align: justify;
-  text-align-last: left;
-  text-wrap: pretty;
 }
 .quote cite {
   display: block;
@@ -298,6 +272,7 @@ cite, .source-chip, .next-label,
 }
 .quote cite em { font-style: italic; text-transform: none; letter-spacing: 0; font-family: var(--serif); font-size: 0.95rem; }
 
+/* Source chip — Cinema / Science / Literature */
 .source-chip {
   display: inline-block;
   margin-left: 0.75rem;
@@ -320,9 +295,6 @@ cite, .source-chip, .next-label,
   font-size: 1.125rem;
   line-height: 1.75;
   color: var(--ink-secondary);
-  text-align: justify;
-  text-align-last: left;
-  text-wrap: pretty;
 }
 .deep-think p + p { margin-top: 1.35rem; }
 .deep-think p:first-child::first-letter {
@@ -405,9 +377,6 @@ cite, .source-chip, .next-label,
   color: var(--ink-secondary);
   line-height: 1.5;
   max-width: 22rem;
-  text-align: justify;
-  text-align-last: left;
-  text-wrap: pretty;
 }
 .footer-links h4 {
   font-size: 0.72rem;
@@ -545,6 +514,7 @@ cite, .source-chip, .next-label,
 }
 .day-card:hover .day-card-arrow { color: var(--accent); transform: translateX(4px); }
 
+/* About page */
 .about {
   max-width: var(--max-text);
   margin: 0 auto;
@@ -570,13 +540,7 @@ cite, .source-chip, .next-label,
   margin: 3rem 0 1rem;
   letter-spacing: -0.015em;
 }
-.about p {
-  color: var(--ink-secondary);
-  line-height: 1.75;
-  text-align: justify;
-  text-align-last: left;
-  text-wrap: pretty;
-}
+.about p { color: var(--ink-secondary); line-height: 1.75; }
 .about p + p { margin-top: 1.25rem; }
 .about ul {
   list-style: none;
