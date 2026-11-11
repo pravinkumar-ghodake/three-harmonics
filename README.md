@@ -1,6 +1,6 @@
 # Three Harmonics
 
-A daily reading in three frequencies — quotes from the films, books, and the occasional scientist who taught me how to keep going, and the deep think that connects them.
+A daily reading in three frequencies — quotes from the films, books, and scientists who taught me how to keep going, and the deep think that connects them.
 
 **Live:** https://pravinkumar-ghodake.github.io/three-harmonics/
 
