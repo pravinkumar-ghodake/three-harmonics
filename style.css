@@ -591,3 +591,31 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   .deep-think p:first-child::first-letter { font-size: 2.5rem; }
   .source-chip { margin-left: 0.5rem; font-size: 0.58rem; }
 }
+
+/* ============================================
+   Justified prose — flush left and right
+   ============================================ */
+
+.intro p,
+.quote p,
+.deep-think p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+/* Narrow screens: justified text in short columns creates
+   ugly rivers of whitespace. Revert to left-aligned. */
+@media (max-width: 720px) {
+  .intro p,
+  .quote p,
+  .deep-think p {
+    text-align: left;
+    hyphens: none;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+  }
+}
