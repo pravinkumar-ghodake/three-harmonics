@@ -598,9 +598,12 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 
 .intro p,
 .quote p,
-.deep-think p {
+.deep-think p,
+.about p:not(.lede),
+.about li {
   text-align: justify;
   text-justify: inter-word;
+  text-align-last: left;
   hyphens: auto;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
@@ -612,7 +615,9 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 @media (max-width: 720px) {
   .intro p,
   .quote p,
-  .deep-think p {
+  .deep-think p,
+  .about p:not(.lede),
+  .about li {
     text-align: left;
     hyphens: none;
     -webkit-hyphens: none;
