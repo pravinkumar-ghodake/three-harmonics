@@ -153,53 +153,6 @@ three-harmonics/
 
 ---
 
-## ✍️ Publishing a New Day
-
-*Every new day touches exactly **four files**, in this order.*
-
-### **I.** `day-NN.html` — *create*
-
-Copy the previous day's file. Change **nine things**:
-
-| | Change | From | To |
-|:---:|:---|:---|:---|
-| 1 | `<title>` | `Day 1 — The Unruly Learner` | `Day NN — [Title]` |
-| 2 | `<meta name="description">` | Day 1 description | Day NN description |
-| 3 | `<link rel="canonical">` | `.../day-01.html` | `.../day-NN.html` |
-| 4 | JSON-LD | `headline`, `description`, `datePublished`, `url` | updated |
-| 5 | eyebrow | `Day 01` | `Day NN` |
-| 6 | `day-number` | `01` | `NN` |
-| 7 | `<h1>` + lede | Day 1 title/lede | Day NN title/lede |
-| 8 | harmonic content | intro + 3 harmonics + post-closing | rewritten |
-| 9 | footer | `Three Harmonics · Day 01` | `Three Harmonics · Day NN` |
-
-Leave every class, selector, and SVG untouched. The design system handles the rest.
-
-### **II.** `index.html` — *update*
-
-- Bump `<span>N entries · ongoing</span>` to the new count
-- Append a `.day-card` block after the previous day's card
-
-### **III.** `sitemap.xml` — *update*
-
-Append one `<url>` block before `</urlset>`:
-
-```xml
-<url>
-  <loc>https://pravinkumar-ghodake.github.io/three-harmonics/day-NN.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-```
-
-### **IV.** `day-(NN-1).html` — *update*
-
-Change the previous day's `next-teaser` href from `#` to `day-NN.html`. Each day's teaser is temporarily broken until the next day exists.
-
-**Commit all four together.** `style.css`, `script.js`, `about.html`, `robots.txt`, and `LICENSE` never change again.
-
----
-
 ## 🔗 Connect
 
 Pravinkumar Ghodake maintains presence across these platforms. All cross-link to reinforce each other.
@@ -278,21 +231,6 @@ This repository uses a **two-license model** to protect different content types:
 | **◉** | **The journal as a whole** | © 2026 Pravinkumar Ghodake | The collection, arrangement, and design are the author's |
 
 **The journal as a curated collection** — the selection of quotes, the thematic arcs across days, the design of the reading experience — is © 2026 Pravinkumar Ghodake. All rights reserved.
-
----
-
-<a id="keywords"></a>
-## 🏷️ Keywords
-
-<div align="justify">
-
-<sub>
-
-Three Harmonics · Pravinkumar Ghodake · Pravinkumar Ramchandra Ghodake · daily reading journal · reading journal · quote journal · quotes blog · film quotes · cinema quotes · movie quotes · science quotes · literature quotes · daily reflections · three quotes a day · three harmonics · harmonic series · sine wave illustration · fundamental frequency · overtones · nonlinear waves · nonlinear dynamics · nonlinear ultrasonics · harmonic scattering · metamaterials · inverse design · structural health monitoring · applied mechanics · solid mechanics · research scholar · IIT Bombay · Fraunces · Newsreader · Inter · GitHub Pages · static site · hand-coded HTML · hand-coded CSS · no framework · no build step · MIT license · CC BY 4.0 · Creative Commons · open reading · reading in the margins · written in the margins · Anton Ego · Ratatouille · Shawshank Redemption · The Martian · Pursuit of Happyness · Chris Gardner · Andy Dufresne · Mark Watney · Richard Feynman · Albert Einstein · Srinivasa Ramanujan · curiosity · persistence · integrity · protecting the signal · discretizing the impossible · hope as persistence · the deep think · reading journal design · justified prose · drop caps · reading progress bar · wave illustration · dark mode · literary blog · science blog · researcher blog · academic blog · philosopher blog · polymath blog
-
-</sub>
-
-</div>
 
 ---
 
