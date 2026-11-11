@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pravinkumar-ghodake.github.io/three-harmonics/sitemap.xml
