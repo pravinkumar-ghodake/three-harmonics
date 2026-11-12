@@ -635,12 +635,11 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   .intro p,
   .quote p,
   .deep-think p,
-  .about p,
-  .about li,
-  .post-closing p:not(:last-child) {
-    text-align: left;
-    hyphens: none;
-    -webkit-hyphens: none;
-    -ms-hyphens: none;
+  .about p:not(.lede),
+  .about li {
+    text-align: justify; /* Changed from left to justify */
+    hyphens: auto;       /* Keep hyphens to reduce word gaps */
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
   }
 }
