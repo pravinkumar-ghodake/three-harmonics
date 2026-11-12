@@ -320,6 +320,11 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   line-height: 1.6;
 }
 
+.post-closing p + p {
+  margin-top: 1.5rem;
+}
+
+
 .next-teaser {
   display: flex;
   align-items: baseline;
