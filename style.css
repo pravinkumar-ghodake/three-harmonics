@@ -536,7 +536,13 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .about .lede {
   font-size: 1.2rem;
   margin: 0 0 3rem;
-  text-align: left;
+  max-width: none;                 /* ← CHANGED: let lede match body width */
+  text-align: justify;             /* ← CHANGED: was left */
+  text-justify: inter-word;        /* ← CHANGED */
+  text-align-last: left;           /* ← CHANGED */
+  hyphens: auto;                   /* ← CHANGED */
+  -webkit-hyphens: auto;           /* ← CHANGED */
+  -ms-hyphens: auto;               /* ← CHANGED */
 }
 .about h2 {
   font-family: var(--display);
@@ -604,7 +610,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .intro p,
 .quote p,
 .deep-think p,
-.about p:not(.lede),
+.about p,                        /* ← CHANGED: was .about p:not(.lede) */
 .about li {
   text-align: justify;
   text-justify: inter-word;
@@ -621,7 +627,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   .intro p,
   .quote p,
   .deep-think p,
-  .about p:not(.lede),
+  .about p,                      /* ← CHANGED: was .about p:not(.lede) */
   .about li {
     text-align: left;
     hyphens: none;
