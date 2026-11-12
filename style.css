@@ -324,6 +324,12 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   margin-top: 1.5rem;
 }
 
+.post-closing p:last-child {
+  text-align: center;
+  text-align-last: center;
+  hyphens: none;
+  -webkit-hyphens: none;
+}
 
 .next-teaser {
   display: flex;
@@ -536,13 +542,13 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .about .lede {
   font-size: 1.2rem;
   margin: 0 0 3rem;
-  max-width: none;                 /* ← CHANGED: let lede match body width */
-  text-align: justify;             /* ← CHANGED: was left */
-  text-justify: inter-word;        /* ← CHANGED */
-  text-align-last: left;           /* ← CHANGED */
-  hyphens: auto;                   /* ← CHANGED */
-  -webkit-hyphens: auto;           /* ← CHANGED */
-  -ms-hyphens: auto;               /* ← CHANGED */
+  max-width: none;
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 .about h2 {
   font-family: var(--display);
@@ -610,8 +616,9 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .intro p,
 .quote p,
 .deep-think p,
-.about p,                        /* ← CHANGED: was .about p:not(.lede) */
-.about li {
+.about p,
+.about li,
+.post-closing p:not(:last-child) {
   text-align: justify;
   text-justify: inter-word;
   text-align-last: left;
@@ -627,8 +634,9 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   .intro p,
   .quote p,
   .deep-think p,
-  .about p,                      /* ← CHANGED: was .about p:not(.lede) */
-  .about li {
+  .about p,
+  .about li,
+  .post-closing p:not(:last-child) {
     text-align: left;
     hyphens: none;
     -webkit-hyphens: none;
